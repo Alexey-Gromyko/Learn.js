@@ -1,0 +1,62 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+#toggle-content{
+    transition: height .25s ease;
+    overflow: hidden;
+}
+#toggle-content:not(.show) {
+    display: none;
+}
+.slide-toggle {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.button {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: fit-content;
+    border: 2px solid red;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s;
+}
+.button:hover {
+    background-color: red;
+    color: cadetblue;
+    transition: all 1s;
+}
+.text p {
+    padding-left: 10px;
+}
+main {
+    min-height: 1500px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+}
+
+.link-buttons {
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    border: 2px solid #202320;
+    transition: all 1s;
+}
+.link-buttons:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 1s;
+}

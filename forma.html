@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/forma.css">
+</head>
+<body>
+    <form id="form">
+        <div class="block1">
+            <fieldset>
+                <legend>
+                    <strong>
+                        Пиво:
+                    </strong>
+                </legend>
+                <div>
+                    <label for="name">Введите Ваше имя</label>
+                    <input id="name" name="firstname" type="text" value="" onkeydown="keyHendler(event)" onkeyup="keyHendler(event)">
+                    <br>
+                    <strong>Выберите производителя:</strong><br>
+                    <label>
+                        <input type="radio" name="manufacturer" id="beer1" checked> Черниговское
+                    </label><br>
+                    <label>
+                        <input type="radio" name="manufacturer" id="beer2"> Львовское
+                    </label><br>
+                    <label>
+                        <input type="radio" name="manufacturer" id="beer3"> ППБ
+                    </label>
+                </div>
+                <div>
+                    <strong>Где Вы чаще всего пьёте пиво?</strong><br>
+                    <label>
+                        <input type="checkbox" name="home" value="at-home">
+                        Дома
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="bar" value="in-bar">
+                        В баре
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="forest" value="in-forest">
+                        На природе
+                    </label><br>
+                </div>
+            </fieldset>
+        </div>
+        <div class="block2">
+            <fieldset>
+                <legend>
+                    <strong>
+                        Автомобили:
+                    </strong>
+                </legend>
+                <div>
+                    <label for="country">Из какой Вы страны?</label>
+                    <input id="country" name="yourCountry" type="text" value="" onkeydown="keyHendler(event)" onkeyup="keyHendler(event)">
+                    <br>
+                    <p><b>Какой кузов Вы предпочитаете?</b></p>
+                    <select class="list" name="bodyAvto">
+                        <option value="Universal">Универсал</option>
+                        <option value="Kabriolet">Кабриолет</option>
+                        <option value="Sedan">Седан</option>
+                        <option value="Kype">Купе</option>
+                    </select><br>
+                    <strong>Выберите автомобиль:</strong><br>
+                    <label>
+                        <input type="radio" name="avto" id="car1"> Mazda
+                    </label><br>
+                    <label>
+                        <input type="radio" name="avto" id="car2"> Hyundai
+                    </label><br>
+                    <label>
+                        <input type="radio" name="avto" id="car3"> Kia
+                    </label><br>
+                    <label>
+                        <input type="radio" name="avto" id="car4"> BMW
+                    </label>
+                </div>
+                <div>
+                    <strong>Что Вы больше всего цените в автомобиле</strong><br>
+                    <label>
+                        <input type="checkbox" name="reliability" value="Надёжность">
+                        Надёжность
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="appearance" value="Внешний вид">
+                        Внешний вид
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="quality" value="Качество">
+                        Качество
+                    </label><br>
+                </div>
+            </fieldset>
+        </div>
+        <div class="block3">
+            <fieldset>
+                <legend>
+                    <strong>
+                        Проффесия:
+                    </strong>
+                </legend>
+                <div>
+                    <strong>Выберите профессию:</strong><br>
+                    <label>
+                        <input type="radio" name="prof" id="prof1"> IT
+                    </label><br>
+                    <label>
+                        <input type="radio" name="prof" id="prof2"> Продавец
+                    </label><br>
+                    <label>
+                        <input type="radio" name="prof" id="prof3"> Водитель
+                    </label>
+                </div>
+                <div>
+                    <strong>Какой Вы видите свою работу?</strong><br>
+                    <label>
+                        <input type="checkbox" name="selery" value="Зарплата">
+                        Высокая зарплата
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="weekend" value="Выходные">
+                        2 выходнных в неделю
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="vocation" value="Отпуск">
+                        Отпуск 2 раза в год
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="boss" value="Начальник">
+                        Добрый начальник
+                    </label><br>
+                </div>
+            </fieldset>
+        </div>
+        <button>Submit</button>
+    </form>
+    <section>
+        <a class="link-buttons" href="index.html">BUTTON</a>
+        <a class="link-buttons" href="method.html">Method</a>
+    </section>
+    <script src="forma.js"></script>
+</body>
+</html>

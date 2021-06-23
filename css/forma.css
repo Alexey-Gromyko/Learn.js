@@ -1,0 +1,34 @@
+.block1, .block2, .block3 {
+    margin: 10px;
+    padding: 10px;
+}
+div {
+    padding: 5px;
+}
+button {
+    margin: 10px;
+    cursor: pointer;
+}
+.list {
+    margin-bottom: 10px;
+}
+.link-buttons {
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    border: 2px solid #202320;
+    transition: all 1s;
+}
+.link-buttons:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 1s;
+}
+section {
+    margin-top: 20px;
+}
+section a {
+    display: block;
+    text-align: center;
+}
