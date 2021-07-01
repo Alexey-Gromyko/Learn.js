@@ -4,220 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porten</title>
-    <script src="./JS/jQuery.js"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="container-header">
-            <div class="header__body">
-                <div class="header-logo">
-                    <a href="#"><img src="img/header-logo.png" alt=""></a>
-                </div>
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                <div class="header__menu">
-                    <ul class="header__list">
-                        <li><a class="header__link" href="#">Понравилось</a></li>
-                        <li><a class="header__link"  href="#">личный кабинет</a></li>
-                        <li><a class="header__link" href="#">настройки</a></li>
-                    </ul>
-                </div>
+    <aside class="header-aside">
+        <div class="container">
+            <div class="aside-lenguage">
+                <a href="">РУС</a>
+                <a href="">ENG</a>
+                <a href="">FR</a>
+            </div>
+            <div class="aside-phone">
+                <a href="tel:88001234567">8 (800) 123-45-67</a>
+            </div>
+            <div class="aside-email">
+                <a href="">sales@log.ru</a>
             </div>
         </div>
+    </aside>
+    <header>
+       <div class="header">
+           <div class="container with-center">
+               <div class="header-logo">
+                   <a href=""><img src="img/logo.png" alt=""></a>
+               </div>
+               <div class="burger-menu">
+                   <span></span>
+               </div>
+               <div class="header-list">
+                   <ul class="list">
+                       <li><a href="">услуги</a></li>
+                       <li><a href="">О компании</a></li>
+                       <li><a href="">вакансии</a></li>
+                       <li><a href="">контакты</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-wrapper">
-                <div class="hero-container">
-                    <div class="hero-box">
-                        <img src="img/header-logo.png" alt="">
-                        <p>санкт-петербург</p>
+            <div class="hero-text">
+                <h2 class="hero-title anim-items anim-no">Грузовые перевозки</h2>
+                <p class="text-hero anim-items">Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование, страхование, упаковка и хранение грузов</p>
+            </div>
+        </section>
+        <section class="our-car">
+            <div class="left-bg"></div>
+            <div class="right-bg"></div>
+            <div class="container column">
+                <div class="our-car-box">
+                    <div class="our-car-text wow animate__animated animate__lightSpeedInLeft">
+                        <h2>грузоперевозки
+                            по европе</h2>
+                        <p>Страны Евросоюза, а также Украина,
+                            Белоруссия со всеми документами.</p>
+                        <button>ПОДРОБНЕЕ</button>
                     </div>
-                    <div class="hero-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a
-                        diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi
-                        ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
+                    <div class="our-car-image wow animate__animated animate__lightSpeedInRight">
+                        <img src="img/car.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="new-colection">
-            <div class="slider-section">
-                <div class="container">
-                    <div class="slider">
-                        <div class="slider-line">
-                            <div class="slider-box">
-                                <div class="img-box">
-                                    <img src="img/clock.png" alt="">
-                                </div>
-                                <p>Louis XVI ATHOS</p>
-                                <span>165 000 руб.</span>
-                            </div>
-                            <div class="slider-box">
-                                <div class="img-box">
-                                    <img src="img/clock.png" alt="">
-                                </div>
-                                <p>Louis XVI ATHOS</p>
-                                <span>165 000 руб.</span>
-                            </div>
-                            <div class="slider-box">
-                                <div class="img-box">
-                                    <img src="img/clock.png" alt="">
-                                </div>
-                                <p>Louis XVI ATHOS</p>
-                                <span>165 000 руб.</span>
-                            </div>
-                            <div class="slider-box">
-                                <div class="img-box">
-                                    <img src="img/clock.png" alt="">
-                                </div>
-                                <p>Louis XVI ATHOS</p>
-                                <span>165 000 руб.</span>
-                            </div>
+        <section class="air-fly">
+            <h2>услуги</h2>
+            <div class="container with-wrap">
+                <div class="air-fly-box animate__animated wow animate__backInRight">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInLeft">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInRight">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInLeft">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInRight">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInLeft">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInRight">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+                <div class="air-fly-box animate__animated wow animate__backInLeft">
+                    <img src="img/plant.png" alt="">
+                    <span>Авиаперевозки</span>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="bg-center"></div>
+            <div class="container with-position with-center">
+                <div class="about-us-text animate__animated wow animate__rotateInDownLeft">
+                    <h2>О компании</h2>
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                    текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм
+                    шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений
+                    пять веков, но и перешагнул в электронный дизайн.</p>
+                </div>
+                <div class="about-us-information animate__animated wow animate__rotateInDownRight">
+                    <div class="information-container">
+                        <div class="information-box">
+                            <span>48</span>
+                            <p>офисов В Европе и СНГ</p>
                         </div>
-                    </div>
-                    <button class="slider-prev">Prev</button>
-                    <button class="slider-next">Next</button>
-                </div>
-            </div>
-            <div class="image-section">
-                <img src="img/sec2.png" alt="">
-                <div class="overlay">
-                    <h2>Новая коллекция</h2>
-                    <button>Каталог</button>
-                </div>
-            </div>
-        </section>
-        <section class="old-colection">
-            <div class="text-secton">
-                <h2>коллекция 2018</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet
-                nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis
-                quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper
-                pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra
-                viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam.</p>
-                <button>посмотреть коллекцию</button>
-            </div>
-            <div class="img-section">
-                <img src="img/sec3.png" alt="">
-            </div>
-        </section>
-        <section class="new-admission">
-            <h2>новые поступления</h2>
-            <div class="admission-container">
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-                <div class="admission-box">
-                    <div class="img-box">
-                        <img src="img/clock.png" alt="">
-                    </div>
-                    <p>Louis XVI ATHOS</p>
-                    <span>165 000 руб.</span>
-                </div>
-            </div>
-        </section>
-        <section class="our-brands">
-            <h2>наши бренды</h2>
-            <div class="brands-container">
-                <div class="links-image-box">
-                    <a href="#"><img src="img/brand.png" alt=""></a>
-                </div>
-                <div class="links-image-box">
-                    <a href="#"><img src="img/brand.png" alt=""></a>
-                </div>
-                <div class="links-image-box">
-                    <a href="#"><img src="img/brand.png" alt=""></a>
-                </div>
-                <div class="links-image-box">
-                    <a href="#"><img src="img/brand.png" alt=""></a>
-                </div>
-            </div>
-        </section>
-        <footer class="footer-wrapper">
-            <div class="footer-container">
-                <div class="footer-information">
-                    <h2>О магазине</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
-                    Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium
-                    quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</p>
-                </div>
-                <div class="footer-categories">
-                    <h2>Категории</h2>
-                    <div class="categories-btn">
-                        <button>часы</button>
-                        <button>браслеты</button>
-                        <button>ремни</button>
-                        <button>ювелирные изделия</button>
-                        <button>запонки</button>
-                    </div>
-                </div>
-                <div class="footer-mailing">
-                    <h2>РАссылка</h2>
-                    <div class="mailing-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
-                        <div class="submit-wrapper">
-                            <input type="text" name="lorem" placeholder="Ваша почта">
-                            <button>ПОДПИСАТЬСЯ</button>
+                        <div class="information-box">
+                            <span>361</span>
+                            <p>грузовиков Volvo, Scania</p>
+                        </div>
+                        <div class="information-box">
+                            <img src="img/lil-car.png" alt="">
+                        </div>
+                        <div class="information-box">
+                            <span>1500</span>
+                            <p>сотрудников профессионалов</p>
+                        </div>
+                        <div class="information-box">
+                            <img src="img/lil-car.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
+        <section class="novigation">
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <a href="https://1map.com/ru/map-embed">1 Map</a>
+            </div>
+        </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <div class="container with-center">
+            <div class="footer-logo">
+                <a href=""><img src="img/footer.png" alt=""></a>
+            </div>
+            <div class="footer-adress">
+                <p>123456, Санкт-Петербург, Невский пр-кт 127</p>
+                <a href="">sales@log.ru</a>
+            </div>
+            <div class="footer-tel">
+                <a href="tel:78123445665">+7 (812) 344-56-65</a>
+                <a href="tel:78123445665">+7 (812) 344-56-65</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
