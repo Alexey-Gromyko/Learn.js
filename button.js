@@ -1,130 +1,88 @@
-const learn = document.querySelector('.learn-js');
-const add = document.querySelector('#add');
-const remove = document.querySelector('#remove');
-const toggle = document.querySelector('#toggle');
-const getAttr = document.querySelector('#getAttr');
-const setAttr = document.querySelector('#setAttr');
-
-
-add.addEventListener('click', () => {
-    learn.classList.add('bg');
-})
-
-remove.addEventListener('click', () => {
-    learn.classList.remove('bg');
-})
-
-toggle.addEventListener('click', () => {
-    learn.classList.toggle('bg');
-})
-
-getAttr.addEventListener('click', () => {
-    getAttr.getAttribute('background');
-})
-
-setAttr.addEventListener('click', () => {
-    setAttr.setAttribute("id", "add");
-})
-
-document.querySelector('#alertOnClick').onclick = function() {
-    alert('Вы нажали на кнопку');
-}
-
-function triggerAlert() {
-    document.getElementById('triggerText').innerHTML = 'Trigger alert';
-}
 
 
 
-
-
-const closestElement = document.querySelector('#closestEl');
-closestElement.addEventListener('click', () => {
-    console.log(closestEl.closest(".container"));
+$('#add').on('click', function () {
+    $('.learn-js').addClass('bg');
 })
 
 
-let massive = ['addClass', 'removeClass', 'toggleClass', 'getAttr', 'setAttr', 'alertOnClick', 'triggerAlert',
-    'cloneThis', 'closestElement', 'findMe', 'fadeInText', 'fadeOutText', 'hideText', 'showText', 'dataAboutMe'];
-const eachBtnText = document.querySelector('#eachBtnText');
-eachBtnText.addEventListener('click', () => {
-    console.log(massive);
+$('#remove').on('click', function () {
+    $('.learn-js').removeClass('bg');
 })
 
-const findMe = document.querySelector('#findMe');
-findMe.addEventListener('click', () => {
-    console.log(document.querySelector('#findMe'));
+$('#toggle').on('click', function () {
+    $('.learn-js').toggleClass('bg');
+})
+
+$('#getAttr').on('click', function () {
+    console.log(this.getAttribute('class'));
 })
 
 
-let elem = document.getElementById('inOutText'),
-    fadeInInterval,
-    fadeOutInterval;
-document.getElementById('fadeIn').addEventListener('click', function () {
-    clearInterval(fadeInInterval);
-    clearInterval(fadeOutInterval);
-
-    elem.fadeIn = function(timing) {
-    let newValue = 0;
-
-    elem.style.display = 'block';
-    elem.style.opacity = 0;
-
-fadeInInterval = setInterval(function(){ 
-
-    if (newValue < 1) {
-        newValue += 0.01;
-    } else if (newValue === 1) {
-    clearInterval(fadeInInterval);   
-    }
-
-    elem.style.opacity = newValue;
-
-    }, timing);
-
-}
-
-    elem.fadeIn(10);
+$('#setAttr').on('click', function () {
+    this.setAttribute("style", "font-size: 40px")
 })
 
-document.getElementById('fadeOut').addEventListener('click',function(){
-    
-    clearInterval(fadeInInterval);
-    clearInterval(fadeOutInterval);
+$('#alertOnClick').on('click', function () {
+    alert("Вы нажали на кнопку")
+})
 
-    elem.fadeOut = function(timing) {
-    let newValue = 1;
-    elem.style.opacity = 1;
+$('#triggerAlert').on('click', function () {
+    $('#alertOnClick').trigger('click');
+})
 
-    fadeOutInterval = setInterval(function(){ 
-
-    if (newValue > 0) {
-        newValue -= 0.01;
-    } else if (newValue < 0) {
-    elem.style.opacity = 0;
-    elem.style.display = 'none';
-    clearInterval(fadeOutInterval);
-    }
-
-    elem.style.opacity = newValue;
-
-    }, timing);
-
-}
-
-    elem.fadeOut(10);
-});
+$('#clone').on('click', function () {
+    new_clone = $('#clone').first().clone();
+    $('.container').append(new_clone);
+})
 
 
+let closestEl = $('#closestEl');
+$('#closestEl').on('click', function () {
+    console.log(closestEl.closest("div"));
+})
 
 
-function hide() {
-    document.getElementById('showHideText').style.display = "none";
-}
+let arr = $('button');
+$('#eachBtnText').on('click', function () {
+    console.log(arr);
+})
 
-function show() {
-    document.getElementById('showHideText').style.display = "inline";
-}
+
+let find = $('body').find('#findMe')
+$('#findMe').on('click', function () {
+    console.log(find);
+})
+
+$('#fadeIn').on('click', function () {
+    $('#inText').fadeIn("slow");
+})
+
+$('#fadeOut').on('click', function () {
+    $('#outText').fadeOut("slow");
+})
+
+
+$('#hide').on('click', function () {
+    $('#hideText').hide();
+})
+
+$('#show').on('click', function () {
+    $('#showText').show();
+})
+
+
+/*const dataAbout = $('#dataAbout');
+let inform = dataAbout.getBoundingClientRect();
+dataAbout.on('click', function () {
+    console.log(inform);
+})*/
+
+
+
+
+
+
 
 
 
